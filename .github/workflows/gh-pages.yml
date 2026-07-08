@@ -12,13 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: '0'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-          extended: true
+          extended: 'true'
 
       - name: Build
         run: hugo --minify --baseURL=https://hugoinaction.github.io/GitHubPages
